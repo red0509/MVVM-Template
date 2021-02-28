@@ -7,23 +7,13 @@
 //  Generated using MVVM Module Generator by Anton Pavlov
 //
 
-protocol ___VARIABLE_productName:identifier___ViewModelProtocol {
-    var delegate: ___VARIABLE_productName:identifier___ViewModelDelegate? { get set }
-    
-    func viewDidLoad()
-}
-
-protocol ___VARIABLE_productName:identifier___ViewModelDelegate: AnyObject {
-    
-}
-
 import UIKit
 
 class ___VARIABLE_productName:identifier___ViewContoller: UIViewController {
     
-    private var viewModel: TestViewModelProtocol
+    private var viewModel: ___VARIABLE_productName:identifier___ViewModelDelegate
     
-    init(viewModel: TestViewModelProtocol) {
+    init(viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -48,6 +38,6 @@ class ___VARIABLE_productName:identifier___ViewContoller: UIViewController {
 
 // MARK: - TestViewModelDelegate
 
-extension TestViewController: TestViewModelDelegate {
+extension TestViewController: ___VARIABLE_productName:identifier___ViewModelDelegate {
     
 }
