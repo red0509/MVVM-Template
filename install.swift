@@ -17,12 +17,12 @@ func printInConsole(_ message:Any){
     print("====================================")
 }
 
-func moveTemplate(){
+func moveTemplate() {
 
     let fileManager = FileManager.default
     let destinationPath = destinationRelativePath //bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
     do {
-        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)"){
+        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)") {
 
             try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
 
