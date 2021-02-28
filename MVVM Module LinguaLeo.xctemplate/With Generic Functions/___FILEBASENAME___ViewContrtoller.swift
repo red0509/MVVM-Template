@@ -11,7 +11,7 @@ import UIKit
 
 class ___VARIABLE_productName:identifier___ViewContoller: UIViewController {
     
-    private var viewModel: ___VARIABLE_productName:identifier___ViewModelDelegate
+    private var viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol
     
     init(viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol) {
         self.viewModel = viewModel
