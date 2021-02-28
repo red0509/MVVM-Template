@@ -20,11 +20,12 @@ protocol ___VARIABLE_productName:identifier___ViewModelDelegate: AnyObject {
 }
 
 final class ___VARIABLE_productName:identifier___ViewModel: ___VARIABLE_productName:identifier___ViewModelProtocol {
+    private let coordinator: ___VARIABLE_productName:identifier___CoordinatorProtocol
     
     weak var delegate: ___VARIABLE_productName:identifier___ViewModelDelegate?
     
-    init() {
-        
+    init(coordinator: ___VARIABLE_productName:identifier___CoordinatorProtocol) {
+        self.coordinator = coordinator
     }
     
     func viewDidLoad() {

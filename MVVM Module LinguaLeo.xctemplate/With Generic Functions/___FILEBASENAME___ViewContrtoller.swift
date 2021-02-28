@@ -36,7 +36,7 @@ class ___VARIABLE_productName:identifier___ViewContoller: UIViewController {
     
 }
 
-// MARK: - TestViewModelDelegate
+// MARK: - ___VARIABLE_productName:identifier___ViewModelDelegate
 
 extension TestViewController: ___VARIABLE_productName:identifier___ViewModelDelegate {
     
